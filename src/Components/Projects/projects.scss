@@ -1,0 +1,89 @@
+//<<<--- project --->>>>//
+@use '../../scss/abstracts/mixins';
+.project__wrapone {
+  columns: 2;
+  gap: 58px;
+  @include mixins.breakpoint(max-xl) {
+    gap: 40px;
+  }
+  @include mixins.breakpoint(max-lg) {
+    gap: 45px;
+  }
+  @include mixins.breakpoint(max-lg) {
+    gap: 30px;
+  }
+  @include mixins.breakpoint(max-md) {
+    columns: 1;
+  }
+}
+.project__wraptwo {
+  padding-left: 18px;
+  @include mixins.breakpoint(max-xl) {
+    padding-left: 10px;
+  }
+  @include mixins.breakpoint(max-lg) {
+    padding-left: 6px;
+  }
+  @include mixins.breakpoint(max-lg) {
+    padding-left: 2px;
+  }
+}
+
+.common__sub {
+  font-size: 24px;
+  font-family: "Caveat", cursive;
+  color: rgb(201, 243, 29);
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  justify-content: center;
+  width: 333px;
+  margin: 0 auto 30px;
+  &::after,
+  &::before {
+    position: absolute;
+    content: "";
+  }
+  &::before {
+    left: 0;
+    width: 80px;
+    height: 1px;
+    background: var(--base);
+  }
+  &::after {
+    right: 0;
+    width: 80px;
+    height: 1px;
+    background: var(--base);
+  }
+  @include mixins.breakpoint(max-xs) {
+    width: 280px;
+    gap: 14px;
+    &::before {
+      left: 0;
+      width: 50px;
+      height: 1px;
+      background: var(--base);
+    }
+    &::after {
+      right: 0;
+      width: 50px;
+      height: 1px;
+      background: var(--base);
+    }
+  }
+}
+
+.custom__hover {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  @include mixins.breakpoint(max-xxl) {
+    margin-top: 60px;
+  }
+  @include mixins.breakpoint(max-md) {
+    margin-top: 40px;
+    // justify-content: flex-start;
+  }
+}

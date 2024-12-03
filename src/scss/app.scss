@@ -1,0 +1,67 @@
+@use "sass:meta";
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&display=swap');
+
+@include meta.load-css("abstracts/mixins.scss");
+@include meta.load-css("abstracts/variables.scss");
+@include meta.load-css("abstracts/buttons.scss");
+@include meta.load-css("base/typography.scss");
+@include meta.load-css("base/animation");
+
+
+// ------------ Shared style
+@include meta.load-css("../Components/Shared/LightBox/lightBox.scss");
+@include meta.load-css("../Components/Shared/PageHeader/pageHeader.scss");
+@include meta.load-css("../Components/Shared/Title/title.scss");
+@include meta.load-css("../Components/Shared/Drawer/drawer.scss");
+@include meta.load-css("../Components/Shared/Form/form.scss");
+@include meta.load-css("../Components/Shared/Header/header.scss");
+@include meta.load-css("../Components/Shared/Marquee/marquee.scss");
+// ------------ Shared style
+
+
+@include meta.load-css("../Components/Banner/banner.scss");
+
+@include meta.load-css("../Components/About/about.scss");
+
+// ---------- Project
+@include meta.load-css("../Components/Projects/projects.scss");
+@include meta.load-css("../Components/Shared/ProjectCard/projectCard.scss");
+// ---------- Project
+
+@include meta.load-css("../Components/Metting/metting.scss");
+
+// ---------- Service
+@include meta.load-css("../Components/Services/services.scss");
+@include meta.load-css("../Components/Services/service.scss");
+@include meta.load-css("../Pages/serviceDetails.scss");
+// ---------- Service
+
+@include meta.load-css("../Components/WorkeProcess/workeProcess.scss");
+@include meta.load-css("../Components/WorkeProcess/workProcessCard.scss");
+
+@include meta.load-css("../Components/Testimonial/testimonial.scss");
+@include meta.load-css("../Components/Partner/partner.scss");
+
+
+// ---------- Blog
+@include meta.load-css("../Components/Blogs/blogs.scss");
+@include meta.load-css("../Components/Blogs/blogSidebar.scss");
+@include meta.load-css("../Components/Blogs/BlogCard/blogCard.scss");
+@include meta.load-css("../Pages/BlogDetails/blogDetails.scss");
+@include meta.load-css("../Pages/AllBlogs/allBlogs.scss");
+// ---------- Blog
+
+@include meta.load-css("../Components/Pricing/pricing.scss");
+
+@include meta.load-css("../Components/Accordion/accordion.scss");
+
+// ----------- Protfolio
+@include meta.load-css("../Pages/Protfolio/protfolio.scss");
+@include meta.load-css("../Pages/ProtfolioDetails/protfolioDetails.scss");
+// ----------- Protfolio
+
+
+@include meta.load-css("../Pages/Contact/contact.scss");
+
+@include meta.load-css("../Components/Shared/Footer/footer.scss");
+
